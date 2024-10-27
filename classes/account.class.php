@@ -19,6 +19,14 @@ class Account{
         $this->db = new Database();
     }
 
+    function getAll(){
+        $sql = "SELECT * FROM account;";
+        $query = $this->db->connect()->prepare($sql);
+        $query->execute();
+    
+        return $query->fetchAll();
+    }
+
     function add(){
         $sql = "INSERT INTO account (first_name, last_name, username, password, role, is_staff, is_admin) VALUES (:first_name, :last_name, :username, :password, :role, :is_staff, :is_admin);";
         $query = $this->db->connect()->prepare($sql);
