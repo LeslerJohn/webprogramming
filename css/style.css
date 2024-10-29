@@ -429,6 +429,12 @@ div.dt-container div.dt-paging ul.pagination{
     color: var(--brand-color);
 }
 
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .sidebar{
         display: flex;

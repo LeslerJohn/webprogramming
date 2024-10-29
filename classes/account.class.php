@@ -43,7 +43,7 @@ class Account{
         return $query->execute();
     }
 
-    function usernameExist($username, $excludeID){
+    function usernameExist($username, $excludeID = null){
         $sql = "SELECT COUNT(*) FROM account WHERE username = :username";
         if ($excludeID){
             $sql .= " and id != :excludeID";
