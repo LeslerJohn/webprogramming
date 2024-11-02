@@ -435,6 +435,11 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
+.product-thumbnail{
+    max-width: 50px;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
     .sidebar{
         display: flex;
